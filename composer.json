@@ -1,0 +1,16 @@
+{
+    "name": "1shiharat/epigone-theme-customizer",
+    "description": "utility class for WordPress.",
+    "license": "GPL v2 or later",
+    "authors": [
+        {
+            "name": "ishihara takashi",
+            "email": "akeome1369@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "autoload": {
+      "files": ["customizer.php"]
+    }
+}
