@@ -56,12 +56,12 @@ class Multi_Image_Custom_Control extends WP_Customize_Control
 		wp_enqueue_media();
 
 		// js
-		$js_path = get_template_directory_uri() . '/inc/theme-customizer/fields/image/assets/js/customize-media-uploader.js';
+		$js_path = epigone_theme_customizer_url() . '/fields/image/assets/js/customize-media-uploader.js';
 
 		wp_enqueue_script( 'wp-mutli-image-control', $js_path , array( 'jquery', 'jquery-ui-sortable' ) );
 
 		// css
-		$css_path = get_template_directory_uri() . '/inc/theme-customizer/fields/image/assets/css/customize-media-uploader.css';
+		$css_path = epigone_theme_customizer_url() . '/fields/image/assets/css/customize-media-uploader.css';
 
 		wp_enqueue_style( 'wp-mutli-image-control', $css_path );
 

@@ -6,6 +6,8 @@
  * @since 1.1.0
  */
 
+require_once 'helper-functions.php';
+
 class Epigone_Theme_Customize {
 
 	private $slug = '';
@@ -47,8 +49,6 @@ class Epigone_Theme_Customize {
 		$this->setting_type = 'option';
 
 		$this->settings = $this->settings_init();
-
-
 		add_action( 'init', array( $this, 'register_fields' ) );
 		add_action( 'customize_register', array( $this, 'register' ) );
 		add_action( 'customize_preview_init', array( $this, 'live_preview' ) );
@@ -462,9 +462,8 @@ class Epigone_Theme_Customize {
 
 		}
 		return $css;
-
 	}
-
 }
 
 add_action( 'after_setup_theme', array( 'Epigone_Theme_Customize', 'get_instance' ), 10 );
+
